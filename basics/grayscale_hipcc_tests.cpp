@@ -147,9 +147,9 @@ int main(int argc, char** argv)
     unsigned char* gray_data = gray_img.data;
 
     // Run HIP grayscale conversion
-    gray(data, gray_data, img.cols, img.rows);
-    gray_inl(data, gray_data, img.cols, img.rows);
-    gray_noin(data, gray_data, img.cols, img.rows);
+    gray(data, gray_data, img.rows, img.cols);
+    gray_inl(data, gray_data, img.rows, img.cols);
+    gray_noin(data, gray_data, img.rows, img.cols);
 
     // Build output filename (e.g., gray_input.png)
     std::string out_name = "gray_" + filename;

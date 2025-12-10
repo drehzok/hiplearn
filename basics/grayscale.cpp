@@ -72,7 +72,7 @@ int main(int argc, char** argv)
     cv::Mat gray_img(img.rows, img.cols, CV_8UC1);
 
     // Run HIP grayscale conversion
-    gray(data, gray_img.data, img.cols, img.rows);
+    gray(data, gray_img.data, img.rows, img.cols);
 
     // Build output filename (e.g., gray_input.png)
     std::string out_name = "gray_" + filename;
