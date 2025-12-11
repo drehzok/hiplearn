@@ -1,3 +1,28 @@
+# Basic kernels in HIP
+
+## `vecadd.cpp`
+
+Vector addition kernel
+dim3 constructor
+HIP syntax
+
+
+## `grayscale.cpp`
+
+OpenCV read image
+Grayscaling kernel
+Inline/noinline analysis `grayscale_hipcc_tests.cpp`
+
+
+## `blur.cpp`
+
+Image blurring with 3 dimensional grid
+
+
+
+
+
+
 ## Notes on hipcc testing
 
 `grayscale_hipcc_tests.cpp` is meant to test out how no decoration, `__noinline__`, `__forceinline__` affects the resulting program behaviour.
