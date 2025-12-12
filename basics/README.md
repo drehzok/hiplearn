@@ -3,14 +3,18 @@
 ## `vecadd.cpp`
 
 Vector addition kernel
+
 dim3 constructor
+
 HIP syntax
 
 
 ## `grayscale.cpp`
 
 OpenCV read image
+
 Grayscaling kernel
+
 Inline/noinline analysis `grayscale_hipcc_tests.cpp`
 
 
